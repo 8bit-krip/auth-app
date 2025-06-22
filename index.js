@@ -4,7 +4,7 @@ const path = require('path');
 const app = express();
 
 app.use(express.json());
-app.use(express.static(path.join(__dirname, 'public'))); // 👈 serves the HTML and static files
+app.use(express.static(path.join(__dirname, 'public'))); 
 
 const JWT_SECRET = "Kishanbhaisahihai";
 const users = [];
